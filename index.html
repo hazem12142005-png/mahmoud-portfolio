@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f8fafc" />
+    <meta name="author" content="Mahmoud Hassan" />
+    <meta name="alternateName" content="محمود حسن" />
+    <meta name="description" content="Mahmoud Hassan is a Cairo-based digital marketing specialist and social media strategist helping Egyptian brands grow online." />
+    <title>Mahmoud Hassan — Digital Marketing Specialist &amp; Social Media Strategist</title>
+    <script>
+      (() => {
+        const key = 'mahmoud-portfolio-theme'
+        let theme
+        try {
+          const saved = localStorage.getItem(key)
+          if (saved === 'light' || saved === 'dark') theme = saved
+        } catch {
+          // Fall back to the operating system preference.
+        }
+        theme ||= window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+        document.documentElement.dataset.theme = theme
+        document.documentElement.classList.toggle('dark', theme === 'dark')
+      })()
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
