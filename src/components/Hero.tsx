@@ -32,7 +32,7 @@ export default function Hero() {
           <div className="hero-image-wrap">
             <img
               className="hero-image"
-              src="/images/mahmoud-hassan.png"
+              src={`${import.meta.env.BASE_URL}images/mahmoud-hassan.png`}
               alt="Mahmoud Hassan, Digital Marketing Specialist"
               fetchPriority="high"
             />

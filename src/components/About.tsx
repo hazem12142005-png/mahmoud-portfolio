@@ -7,7 +7,7 @@ export default function About() {
         <div className="about-visual">
           <div className="about-photo-frame">
             <img
-              src="/images/mahmoud-hassan.png"
+              src={`${import.meta.env.BASE_URL}images/mahmoud-hassan.png`}
               alt="Mahmoud Hassan smiling in a black blazer"
               loading="lazy"
             />
@@ -28,7 +28,7 @@ export default function About() {
             <div><strong>Arabic &amp; English</strong><span>Bilingual content and communication</span></div>
           </div>
           <div className="about-actions">
-            <a className="button button-primary" href="/CVMahmoud/Mahmoud_Hassan_CV.pdf" download>Download CV <ArrowDownToLine size={16} /></a>
+            <a className="button button-primary" href={`${import.meta.env.BASE_URL}CVMahmoud/Mahmoud_Hassan_CV.pdf`} download>Download CV <ArrowDownToLine size={16} /></a>
             <a className="text-link" href="#services">What I can help with <ArrowUpRight size={15} /></a>
           </div>
           <p className="cv-note">Download Mahmoud's CV as a PDF.</p>
